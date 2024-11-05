@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Week-3</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#music">Music</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-page">
+            <div class="home-page-img">
+                <img src="pp-porto.jpg" alt="Profile Picture">
+                <a href=""></a>
+            </div>
+
+            <div class="content">
+                <h1>Hello, I'am Baruna</h1>
+                <h3>Web Enthusiast</h3>
+                <p>Baruna adalah seorang pemuda yang baru saja mulai belajar tentang web development. 
+                    Ia memiliki ketertarikan yang besar terhadap dunia digital, 
+                    dan ia ingin menjadi seorang web developer profesional.
+                </p>
+
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/barunapasha/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/085717623720"><i class='bx bxl-whatsapp'></i></i></a>
+                    <a href="#"><i class='bx bxl-twitch' ></i></a>
+                    <a href="https://www.linkedin.com/in/senopati-baruna-pasha-3a3a62246/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="music-page">
+            <div class="music-page-img">
+                <img src="pp-porto.jpg" alt="Profile Picture">
+            </div>
+                
+            <div class="music-page-media">
+                <audio controls>
+                    <source src="gracie.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+        
+                <video controls>
+                    <source src="gracie.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>        
+
+        <section id="contact" class="contact-page">
+            <div class="form-container">
+                <h2>Contact Me</h2>
+                <form action="#" method="get" onsubmit="return validateForm()">
+                    <h3>Silahkan Isi Form Dibawah Untuk Menghubungi Saya!</h3>
+                    <table>
+                        <tr>
+                            <td><label for="nama">Nama Lengkap:</label></td>
+                            <td><input type="text" name="nama" id="nama" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="hp">Nomor Telepon:</label></td>
+                            <td><input type="tel" name="hp" id="hp" pattern="[0-9]{10,15}" required placeholder="Contoh: 085717623720"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">Pesan:</label></td>
+                            <td><textarea name="pesan" id="pesan" placeholder="Tulis pesan disini" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="urgent">Urgent?</label></td>
+                            <td><input type="checkbox" id="urgent" name="urgent" value="urgent"><b>YA!</b></td>
+                        </tr>
+                    </table>
+                    <div class="button-group">
+                        <input type="submit" value="Kirim">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Copyright 2024 | Design by <a href="https://www.instagram.com/barunapasha/" target="#">Baruna</a>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
